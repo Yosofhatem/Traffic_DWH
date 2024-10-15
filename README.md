@@ -36,16 +36,27 @@ The key objectives of this project are:
 ## 📂 Project Structure
 
 ├── kafka/
+
 │   ├── accident_events.py            # Generates data for streaming
+
 │   ├── post_to_kafka.py              # Posts data to Kafka
+
 │
+
 ├── notebooks/
+
 |      └── Spark_Processing
+
 │               └── Accident_data_processor.ipynb  # Processes data using Spark Streaming
+
 │
+
 ├── schema/
+
 │   └── Incident_Schema.sql            # Database schema for MySQL
+
 │
+
 ├──  docker-compose.yml              # Docker configuration for Kafka, Spark, and MySQL
 
 
