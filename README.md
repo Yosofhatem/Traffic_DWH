@@ -17,9 +17,8 @@ Welcome to the **Real-Time Accident Data Processing** project, a scalable pipeli
 - [Setup and Usage](#setup-and-usage)
   - [Prerequisites](#prerequisites)
   - [Steps](#steps)
-- [Detailed Explanation of Files](#detailed-explanation-of-files)
 - [Future Improvements](#future-improvements)
-- [License](#license)
+
 
 ---
 ## 🔍 Overview
