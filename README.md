@@ -96,11 +96,12 @@ Docker is used to containerize all services for easy deployment:
 
    ```bash
    git clone https://github.com/Yosofhatem/Traffic_DWH.git
-   cd your-repository-name
+   cd Traffic_DWH
 
 
 2. **Launch the Docker Services:**
 
- In the root of your project directory, run the following command to spin up Kafka, Spark, and MySQL:
-
-- `docker-compose up`
+   In the root of your project directory, run the following command to spin up Kafka, Spark, and MySQL:
+   
+```bash
+ docker-compose up
