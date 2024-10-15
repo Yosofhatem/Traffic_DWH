@@ -103,5 +103,5 @@ Docker is used to containerize all services for easy deployment:
 
    In the root of your project directory, run the following command to spin up Kafka, Spark, and MySQL:
    
-```bash
- docker-compose up
+   ```bash
+   docker-compose up
