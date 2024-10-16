@@ -22,6 +22,7 @@
 - Streaming data source simulated for real-time data ingestion using Kafka.
 - Batch data source processed in a Jupyter notebook using Pandas.
 - An ETL pipeline for processing both real-time and batch data, transforming the data with PySpark, and loading it into MySQL.
+- Power BI Dashboards for visualizing the data insights in real-time.
 
 The goal of this project is to demonstrate how to effectively build a scalable pipeline to process both real-time and batch data.
 
@@ -34,6 +35,8 @@ The architecture includes the following components:
 2. **PySpark**: PySpark processes both the real-time streaming data from Kafka and batch data.
 3. **MySQL**: The transformed data is loaded and stored in MySQL.
 4. **Jupyter Notebooks**: Jupyter notebooks are used for batch data processing using Pandas and SQLAlchemy.
+5. **Power BI**: Power BI connects to the MySQL database for real-time and batch data visualization, creating dashboards that offer insights into accident patterns, frequency, and trends.
+
 
 ---
 
@@ -44,7 +47,7 @@ The architecture includes the following components:
 - **PySpark**: For real-time and batch data transformations.
 - **MySQL**: To store the transformed data as a relational database.
 - **Pandas & SQLAlchemy**: For batch ETL operations and loading data into MySQL.
-- **Power BI**:
+- **Power BI**: For creating real-time dashboards connected to MySQL, enabling users to track accident data in near real-time.
 - **Jupyter Notebooks**: For interactive development and analysis of batch data.
 
 ---
@@ -81,7 +84,12 @@ The architecture includes the following components:
 ---
 
 ## 8. Dashboards
-You can visualize the data using a BI tool such as **Tableau** or **Power BI**, which can connect to the MySQL database to display real-time data insights and batch trends.
+**Power BI** is used to visualize both real-time streaming and batch data stored in MySQL. Power BI provides interactive, user-friendly dashboards, which can be refreshed to provide up-to-date insights from the streaming data pipeline.
+
+- **Real-Time Accident Dashboard**: Displays real-time accident data ingestion, with updates in near real-time based on the data flowing through Kafka and PySpark.
+- **Batch Data Dashboard**: Provides a detailed overview of batch data, highlighting trends and patterns over time.
+
+These dashboards enable you to easily monitor and analyze accident data trends and make data-driven decisions.
 
 ---
 
