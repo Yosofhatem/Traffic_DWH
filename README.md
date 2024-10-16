@@ -143,58 +143,58 @@ Contributions are welcome! Feel free to submit issues or pull requests to improv
 ### 1. PySpark vs. Hadoop (MapReduce)
 **PySpark** was chosen over **Hadoop’s MapReduce** for several key reasons, especially for this project:
 
-- 🟢 **Performance**: PySpark’s in-memory processing capabilities offer a significant performance improvement over Hadoop’s disk-based processing. PySpark can be **up to 100x faster** than Hadoop MapReduce.
+-  **Performance**: PySpark’s in-memory processing capabilities offer a significant performance improvement over Hadoop’s disk-based processing. PySpark can be **up to 100x faster** than Hadoop MapReduce.
   
-- 🟢 **Ease of Use**: PySpark has a more intuitive API in Python, making it easier to implement complex transformations.
+-  **Ease of Use**: PySpark has a more intuitive API in Python, making it easier to implement complex transformations.
 
-- 🟢 **Unified Processing**: Spark handles both **batch and streaming data** in one framework, making it highly versatile, whereas Hadoop would require multiple tools.
+-  **Unified Processing**: Spark handles both **batch and streaming data** in one framework, making it highly versatile, whereas Hadoop would require multiple tools.
 
 ### 2. MySQL vs. PostgreSQL
 While both MySQL and PostgreSQL are widely used relational databases, **MySQL** was chosen for:
 
-- 🟡 **Widespread Adoption**: MySQL is the most widely adopted open-source database with great support for ETL and BI tools.
+-  **Widespread Adoption**: MySQL is the most widely adopted open-source database with great support for ETL and BI tools.
 
-- 🟡 **Speed**: MySQL’s **write performance** can be faster than PostgreSQL, especially for simple transactional operations, which is key for real-time data.
+-  **Speed**: MySQL’s **write performance** can be faster than PostgreSQL, especially for simple transactional operations, which is key for real-time data.
 
-- 🟡 **Scalability**: MySQL supports **row-level locking** and better concurrency handling for high-throughput systems like this.
+-  **Scalability**: MySQL supports **row-level locking** and better concurrency handling for high-throughput systems like this.
 
 ### 3. Kafka for Streaming
 **Kafka** was selected for handling the streaming aspect:
 
-- 🔵 **Fault Tolerance & Scalability**: Kafka processes **millions of messages per second** with low latency and horizontal scalability.
+-  **Fault Tolerance & Scalability**: Kafka processes **millions of messages per second** with low latency and horizontal scalability.
   
-- 🔵 **Partitioning**: Kafka ensures data parallelism, improving data throughput with PySpark by reading from multiple partitions simultaneously.
+-  **Partitioning**: Kafka ensures data parallelism, improving data throughput with PySpark by reading from multiple partitions simultaneously.
 
-- 🔵 **Durability**: Kafka persists messages to disk and allows message replay for fault recovery.
+-  **Durability**: Kafka persists messages to disk and allows message replay for fault recovery.
 
 ### 4. Streaming with MySQL
 Although traditionally used for OLTP, **MySQL** was chosen for streaming due to:
 
-- 🟠 **Write Performance**: With **InnoDB**, MySQL supports high-throughput writes, compatible with real-time data processing.
+-  **Write Performance**: With **InnoDB**, MySQL supports high-throughput writes, compatible with real-time data processing.
 
-- 🟠 **Scalability**: Modern MySQL with **sharding** and **replication** ensures it scales well with large streaming volumes.
+-  **Scalability**: Modern MySQL with **sharding** and **replication** ensures it scales well with large streaming volumes.
 
-- 🟠 **Efficient Storage**: MySQL uses **row-based storage** and efficient indexing, ensuring fast access patterns for both reads and writes.
+-  **Efficient Storage**: MySQL uses **row-based storage** and efficient indexing, ensuring fast access patterns for both reads and writes.
 
 ### 5. Pandas and SQLAlchemy for Batch Processing
 **Pandas** and **SQLAlchemy** were chosen for batch processing for the following reasons:
 
-- 🟣 **Performance**: Pandas is fast and powerful for handling **small to medium-sized datasets**.
+-  **Performance**: Pandas is fast and powerful for handling **small to medium-sized datasets**.
   
-- 🟣 **Ease of Use**: Pandas allows for quick data manipulation, and SQLAlchemy simplifies database interaction with MySQL.
+-  **Ease of Use**: Pandas allows for quick data manipulation, and SQLAlchemy simplifies database interaction with MySQL.
 
 ### 6. Docker for Containerization
 **Docker** simplifies the deployment and management of this project:
 
-- 🔶 **Consistency Across Environments**: Docker ensures that the stack runs consistently across various environments.
+-  **Consistency Across Environments**: Docker ensures that the stack runs consistently across various environments.
 
-- 🔶 **Scalability**: Easily scale containers for Kafka brokers or PySpark workers as the data load grows.
+-  **Scalability**: Easily scale containers for Kafka brokers or PySpark workers as the data load grows.
 
-- 🔶 **Rapid Deployment**: Docker speeds up the setup process, making it easier for contributors to get up and running.
+-  **Rapid Deployment**: Docker speeds up the setup process, making it easier for contributors to get up and running.
 
 ### 7. Jupyter for Interactive Development
 **Jupyter Notebooks** was chosen for batch processing and exploration:
 
-- 🟤 **Interactive Environment**: Jupyter allows for quick experimentation, ETL tasks, and exploration of batch data.
+-  **Interactive Environment**: Jupyter allows for quick experimentation, ETL tasks, and exploration of batch data.
 
-- 🟤 **Visualization**: Jupyter provides powerful data visualization capabilities for analyzing trends in batch data.
+-  **Visualization**: Jupyter provides powerful data visualization capabilities for analyzing trends in batch data.
