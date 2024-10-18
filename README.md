@@ -100,23 +100,79 @@ These dashboards enable you to easily monitor and analyze accident data trends a
 - Docker Compose installed.
 
 ### Steps:
-1. Clone the repository:
+
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/Yosofhatem/Traffic_DWH.git
    cd Traffic_DWH
    ```
 
-2. Start the Docker containers:
+2. **Start the Docker containers:**
    ```bash
-   docker-compose up
+   docker-compose up -d
    ```
 
-3. Open Jupyter Notebook:
-   Access the Jupyter environment by visiting `http://localhost:8889` in your browser.
+3. **Access the Kafka container:**
+   - Open a terminal and retrieve the container ID or use the Kafka container name (e.g., `ed-kafka`):
+     ```bash
+     docker ps
+     ```
+   - Enter the Kafka container:
+     ```bash
+     docker exec -it [container id or ed-kafka] /bin/bash
+     ```
 
-4. Interact with the services:
-   - Kafka is available at `localhost:9092`
-   - MySQL is available at `localhost:3307`
+4. **Create the `accident-data` topic:**
+   - Run the following command inside the Kafka container:
+     ```bash
+     kafka-topics --create --topic accident-data --bootstrap-server localhost:29092
+     ```
+
+5. **Verify the topic creation:**
+   - List the topics to confirm `accident-data` was created:
+     ```bash
+     kafka-topics --list --bootstrap-server localhost:29092
+     ```
+
+6. **Open Jupyter Notebook:**
+   - Access Jupyter by visiting [http://localhost:8889](http://localhost:8889) and using the token from the Docker logs.
+
+7. **Upload necessary files:**
+   - Upload the following files to the Jupyter environment:
+     - `accident_events.py`
+     - `AccidentDataProcessor.ipynb`
+     - `post_to_Kafka.py`
+
+8. **Install Kafka for Python:**
+   - Open a terminal in Jupyter and run the following command to install the required Python Kafka library:
+     ```bash
+     pip install kafka-python
+     ```
+
+9. **Connect to the MySQL database:**
+   - Open your preferred database client (MySQL Workbench, Visual Studio Code Database Client, etc.).
+   - Use the following configuration to connect:
+     - **Connection Name:** Any name
+     - **Host:** 127.0.0.1 or localhost
+     - **Port:** 3307
+     - **User:** root
+     - **Password:** 123456
+   - Execute the `incidents_Schema.sql` file to set up the data warehouse schema.
+
+10. **Run the Jupyter Notebook:**
+    - Start running `AccidentDataProcessor.ipynb` cell by cell until you reach the loading function.
+
+11. **Generate data for the Kafka topic:**
+    - In the terminal, run the following command to start generating data:
+      ```bash
+      python post_to_Kafka.py
+      ```
+
+12. **Complete the notebook execution:**
+    - Run the remaining cells in the notebook.
+
+And voilà, it works! 😊
+
 
 ---
 
