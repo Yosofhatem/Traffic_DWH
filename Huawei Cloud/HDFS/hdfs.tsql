@@ -1,0 +1,24 @@
+--- Create HDFS Directory for Data
+hdfs dfs -mkdir -p /user/hive/data
+
+
+--- Upload CSV Files to HDFS
+hdfs dfs -put dim_crossing.csv /user/hive/data/
+hdfs dfs -put dim_date.csv /user/hive/data/
+hdfs dfs -put dim_location.csv /user/hive/data/
+hdfs dfs -put dim_road_condition.csv /user/hive/data/
+hdfs dfs -put dim_severity.csv /user/hive/data/
+hdfs dfs -put dim_time.csv /user/hive/data/
+hdfs dfs -put fact_incidents.csv /user/hive/data/
+
+--- List Files in HDFS Directory
+hdfs dfs -ls /user/hive/data
+
+--- Check the First 5 Rows of Each CSV File
+hdfs dfs -cat /user/hive/data/dim_crossing.csv | head -5
+hdfs dfs -cat /user/hive/data/dim_date.csv | head -5
+hdfs dfs -cat /user/hive/data/dim_location.csv | head -5
+hdfs dfs -cat /user/hive/data/dim_road_condition.csv | head -5
+hdfs dfs -cat /user/hive/data/dim_severity.csv | head -5
+hdfs dfs -cat /user/hive/data/dim_time.csv | head -5
+hdfs dfs -cat /user/hive/data/fact_incidents.csv | head -5
