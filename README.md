@@ -11,7 +11,7 @@
 8. [Dashboards](#8-dashboards)
 9. [Setup and Installation](#9-setup-and-installation)
 10. [Usage](#10-usage)
-11. [Contributing](#11-contributing)
+11. [Why This Stack](#11-Why-This-Stack?)
 
 ---
 
@@ -186,11 +186,6 @@ And voilà, it works! 😊
 1. Open the Jupyter notebook in your browser.
 2. Load, clean, and transform batch data using Pandas.
 3. Load the transformed data into MySQL using SQLAlchemy.
-
----
-
-## 11. Contributing
-Contributions are welcome! Feel free to submit issues or pull requests to improve the project. Please make sure any changes are well-documented and tested.
 
 ---
 
