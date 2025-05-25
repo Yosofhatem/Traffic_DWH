@@ -5,13 +5,13 @@
 2. [Architecture](#2-architecture)
 3. [Technologies Used](#3-technologies-used)
 4. [Data Sources](#4-data-sources)
-5. [ETL Process](#6-etl-process)
-6. [Database Systems](#7-database-systems)
-7. [Optimization Techniques](#8-optimization-techniques)
-8. [Dashboards](#9-dashboards)
-9. [Setup and Installation](#10-setup-and-installation)
-10. [Usage](#11-usage)
-11. [Contributing](#12-contributing)
+5. [ETL Process](#5-etl-process)
+6. [Database Systems](#6-database-systems)
+7. [Optimization Techniques](#7-optimization-techniques)
+8. [Dashboards](#8-dashboards)
+9. [Setup and Installation](#9-setup-and-installation)
+10. [Usage](#10-usage)
+11. [Contributing](#11-contributing)
 
 ---
 
