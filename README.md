@@ -11,7 +11,7 @@
 8. [Dashboards](#8-dashboards)
 9. [Setup and Installation](#9-setup-and-installation)
 10. [Usage](#10-usage)
-11. [Why This Stack](#11-Why-This-Stack?)
+11. [Why This Stack?](#why-this-stack)
 
 ---
 
