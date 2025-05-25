@@ -1,7 +1,7 @@
 # 🚗 Real-Time Accident Data Processing 🚗
 
 ## Table of Contents
-1. [Project Overview]
+1. [Project Overview](#project-overview)
 2. [Architecture](#architecture)
 3. [Technologies Used](#technologies-used)
 4. [Data Sources](#data-sources)
@@ -15,7 +15,7 @@
 
 ---
 
-## 1. (#project-overview)Project Overview
+## 1. Project Overview
 **🚗 Real-Time Accident Data Processing 🚗** is designed to showcase a real-time and batch data pipeline using Docker and technologies like PySpark, Kafka, MySQL, and Jupyter. The project contains the following:
 
 - A **Docker-Compose** setup that launches a PySpark Jupyter environment, Zookeeper, Kafka, and MySQL.
