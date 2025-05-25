@@ -1,7 +1,7 @@
 # 🚗 Real-Time Accident Data Processing 🚗
 
 ## Table of Contents
-1. [Project Overview](#project-overview)
+1. [Project Overview](#1-project-overview)
 2. [Architecture](#architecture)
 3. [Technologies Used](#technologies-used)
 4. [Data Sources](#data-sources)
